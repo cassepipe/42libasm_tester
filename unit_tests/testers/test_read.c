@@ -6,13 +6,13 @@
 /*   By: vscabell <vscabell@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/20 20:20:50 by vscabell          #+#    #+#             */
-/*   Updated: 2021/04/09 13:33:43 by abrabant         ###   ########.fr       */
+/*   Updated: 2024/06/19 18:00:54 by cassepipe        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header_test.h"
 
-void	result(ssize_t (*ft)(), int fd)
+void	result(ssize_t (*ft)(int, void *, size_t), int fd)
 {
 	ssize_t	ret;
 	char	buffer[101] = {0};

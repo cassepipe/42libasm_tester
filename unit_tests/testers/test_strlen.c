@@ -6,13 +6,13 @@
 /*   By: vscabell <vscabell@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/20 19:49:31 by vscabell          #+#    #+#             */
-/*   Updated: 2020/09/26 19:12:40 by vscabell         ###   ########.fr       */
+/*   Updated: 2024/06/19 17:56:17 by cassepipe        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header_test.h"
 
-static void	result(size_t (*ft)(), char *str)
+static void	result(size_t (*ft)(const char*), char *str)
 {
 	printf("string = %s\n", str);
 	printf("return = %lu\n", ft(str));

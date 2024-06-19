@@ -6,13 +6,13 @@
 /*   By: vscabell <vscabell@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/20 20:20:50 by vscabell          #+#    #+#             */
-/*   Updated: 2020/09/26 19:21:49 by vscabell         ###   ########.fr       */
+/*   Updated: 2024/06/19 17:55:32 by cassepipe        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header_test.h"
 
-static void	result(ssize_t (*ft)(), int fd, char *str)
+static void	result(ssize_t (*ft)(int, const void*, size_t), int fd, char *str)
 {
 	ssize_t	ret;
 

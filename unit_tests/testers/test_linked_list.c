@@ -6,7 +6,7 @@
 /*   By: vscabell <vscabell@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/20 02:48:54 by vscabell          #+#    #+#             */
-/*   Updated: 2020/09/24 02:43:34 by vscabell         ###   ########.fr       */
+/*   Updated: 2024/06/19 18:03:43 by cassepipe        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	list_push_front(t_list **begin_list, void *data)
 	}
 }
 
-void	initialize_list(t_list **list, int index, void (*ft)())
+void	initialize_list(t_list **list, int index, void (*ft)(t_list**, const char*))
 {
 	if (index == 0)
 		*list = NULL;

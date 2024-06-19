@@ -6,13 +6,13 @@
 /*   By: vscabell <vscabell@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/20 19:49:31 by vscabell          #+#    #+#             */
-/*   Updated: 2020/09/26 19:18:04 by vscabell         ###   ########.fr       */
+/*   Updated: 2024/06/19 18:01:27 by cassepipe        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header_test.h"
 
-static void	result(int (*ft)(), char *s1, char *s2)
+static void	result(int (*ft)(const char *, const char *), char *s1, char *s2)
 {
 	printf("s1 = \"%s\" | ", s1);
 	printf("s2 = \"%s\"\n", s2);
